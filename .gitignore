@@ -1,0 +1,17 @@
+node_modules
+dist
+out
+.DS_Store
+.eslintcache
+*.log*
+credentials.json
+token.json
+.env
+.dev-data
+
+# 실제 운영 환경값(시트 ID·담당자명 등)이 들어가는 로컬 설정 — config.example.ts 참고
+src/main/config.ts
+
+# 사내 기획 문서 등 공개 리포에 올리지 않는 자료
+AI확인제_진행현황_위젯_기획.md.pdf
+PROJECT_OVERVIEW.md

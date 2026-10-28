@@ -1,0 +1,52 @@
+@import 'pretendard/dist/web/variable/pretendardvariable.css';
+@import '../styles/tokens.css';
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+  font-size: 13px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* 창 가장자리에 투명 여백을 둬 카드 그림자(blur 16px + offset 4px)가 번질
+     공간을 준다. 여백이 그림자 크기보다 작으면 창의 네모난 경계에서 그림자가
+     잘려 보인다 — 여백은 항상 --shadow-window의 blur+offset보다 넉넉해야 한다. */
+  padding: 20px;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

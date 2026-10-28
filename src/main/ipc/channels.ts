@@ -1,0 +1,15 @@
+export const IPC = {
+  getProducts: 'products:get',
+  productsUpdated: 'products:updated',
+  refreshNow: 'products:refresh',
+  appendHistoryEntry: 'products:appendHistoryEntry',
+  editHistoryEntry: 'products:editHistoryEntry',
+  deleteHistoryEntry: 'products:deleteHistoryEntry',
+  undoLast: 'products:undoLast',
+  confirmExclude: 'products:confirmExclude',
+  getSettings: 'settings:get',
+  setSetting: 'settings:set',
+  getAuthStatus: 'auth:getStatus',
+  startGoogleAuth: 'auth:start',
+  hideWindow: 'window:hide',
+} as const
